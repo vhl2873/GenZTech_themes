@@ -1,0 +1,15 @@
+SCREENSHOT INSTRUCTIONS FOR BAMBOOSTUDY THEME
+
+To create the screenshot.png file for your WordPress theme:
+
+1. Take a screenshot of your theme's homepage when it's active
+2. The screenshot should be 1200x900 pixels (recommended WordPress theme screenshot size)
+3. Save it as "screenshot.png" in the root directory of your theme
+4. The screenshot will appear in the WordPress admin when selecting themes
+
+Alternative: You can use any image editing software to create a simple preview image with:
+- Theme name: "BambooStudy"
+- Description: "Educational WordPress Theme"
+- Preview of the main design elements
+
+The screenshot.png file should be placed in the same directory as style.css, index.php, etc.

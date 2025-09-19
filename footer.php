@@ -1,11 +1,33 @@
-  <!-- Footer slim bar -->
-  <div class="footer-bottom text-center small py-3">
-    Copyright @BambooStudy | Design & Developed by BambooStudy
-  </div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <?php if (is_active_sidebar('footer-1')) : ?>
+      <div class="footer-widgets py-5">
+        <div class="container">
+          <div class="row">
+            <?php dynamic_sidebar('footer-1'); ?>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
+    
+    <!-- Footer slim bar -->
+    <div class="footer-bottom text-center small py-3">
+      <div class="container">
+        <p class="mb-0">
+          <?php
+          printf(
+            __('Copyright %s %s | Design & Developed by %s', 'bamboo-study'),
+            '&copy;',
+            date('Y'),
+            get_bloginfo('name')
+          );
+          ?>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <?php wp_footer(); ?>
 </body>
 </html>
 
