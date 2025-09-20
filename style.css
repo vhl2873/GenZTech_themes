@@ -166,6 +166,145 @@ body {
   margin-right: calc(50% - 50vw);
 }
 
+/* Course Detail Page Styles */
+.course-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 1rem;
+}
+
+.course-categories .badge {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+}
+
+.creator-info {
+  font-size: 0.95rem;
+}
+
+.creator-logo img {
+  border-radius: 50%;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-player {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.play-button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  background: #16a34a !important;
+}
+
+.course-tabs .nav-tabs {
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.course-tabs .nav-link {
+  color: #6b7280;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0;
+}
+
+.course-tabs .nav-link.active {
+  color: #dc2626;
+  background: none;
+  border-bottom: 3px solid #dc2626;
+}
+
+.course-tabs .nav-link:hover {
+  color: #dc2626;
+  border-color: transparent;
+}
+
+.course-overview p {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+
+.course-content li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.course-content li:last-child {
+  border-bottom: none;
+}
+
+.pricing-card {
+  border: 2px solid #e5f2e8;
+}
+
+.current-price {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.discount-badge {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.course-info {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.purchase-section .btn {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.purchase-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.3);
+}
+
+.notes {
+  border-left: 4px solid #f59e0b;
+}
+
+.notes h6 {
+  margin-bottom: 0.75rem;
+}
+
+.payment-instructions {
+  border: 1px solid #e5e7eb;
+}
+
+.payment-instructions ol {
+  padding-left: 1.2rem;
+}
+
+.payment-instructions li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .search-bar {
@@ -180,5 +319,27 @@ body {
   .floating-box {
     font-size: 12px;
     padding: 6px 10px;
+  }
+
+  .course-title {
+    font-size: 1.5rem;
+  }
+
+  .video-player {
+    height: 250px !important;
+  }
+
+  .play-button {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .current-price {
+    font-size: 2rem;
+  }
+
+  .course-tabs .nav-link {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
   }
 }
